@@ -286,12 +286,13 @@ public class Project_coding {
 	
 	static void lastPhase(double x) {
 		double totalRevenueOrLoss = (ship.insuranceMoney * ship.guests) - x;
+		double revenue = (ship.insuranceMoney * ship.guests);
 		 System.out.print("Total revenue / loss of your budget is : USD ");
-		 System.out.printf("%.2f", x);
+		 System.out.printf("%.2f", totalRevenueOrLoss);
 		 System.out.println();
 		 System.out.print("Please insert how many trips will your ship be doing in one year : ");
 		 int tripsPerOneYear = Integer.parseInt(input.nextLine());
-		 double totalRevenueOrLossAfterSailing = (double) ((tripsPerOneYear * 5) * totalRevenueOrLoss) - x;
+		 double totalRevenueOrLossAfterSailing = (double) ((((revenue * tripsPerOneYear) * 5) * totalRevenueOrLoss));
 		 System.out.print("The total revenue / loss of your budget after 5 years is : USD ");
 			System.out.printf("%.2f", totalRevenueOrLossAfterSailing);
 			System.out.println();
