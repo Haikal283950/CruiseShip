@@ -70,7 +70,6 @@ class LowEndEmployees {
 }
 
 public class Project_coding {
-    //Calculate the salary of hourly employees.
 	
 	static Scanner input = new Scanner (System.in);
 	static LinerSpecs ship = new LinerSpecs();
